@@ -69,9 +69,9 @@ export default {
     for (let i = 0; i < this.data.length; i++) {
     let check = this.data[i];
     if (this.data.indexOf(check) == i && this.data.indexOf(check, i + 1) == -1) {
-      setTimeout(() => this.output = check, 5000);
-      setTimeout(() => this.buttonShow = true, 5000);
-      setTimeout(() => this.imgShow = false, 5000);
+      setTimeout(() => this.output = check, 2000);
+      setTimeout(() => this.buttonShow = true, 2000);
+      setTimeout(() => this.imgShow = false, 2000);
       this.imgShow = true;
       this.buttonShow = false
     }
