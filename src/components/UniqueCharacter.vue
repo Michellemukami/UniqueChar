@@ -104,9 +104,7 @@
           >
             Search
           </button>
-          <!-- <button v-if="buttonShow" @click.prevent="Clean" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-5 pl-5 rounded focus:outline-none focus:shadow-outline" type="submit">
-          Clear
-        </button> -->
+
           <div v-if="loading">
             <iframe
               id="giff"
@@ -145,15 +143,13 @@ export default {
     };
   },
   methods: {
-    Clean() {
-      document.getElementById("display").innerHTML = "";
-    },
+ 
     closeAlert: function () {
       this.alertOpen = false;
     },
     submit(e) {
       this.loading = true;
-
+      
       setTimeout(() => {
         this.output = this.nonRepeatingChar(this.data);
         this.loading = false;
